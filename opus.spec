@@ -1,11 +1,11 @@
 Summary:	IETF Opus Interactive Audio Codec
 Name:		opus
-Version:	1.0.3
+Version:	1.1
 Release:	1
 License:	BSD
 Group:		Libraries
 Source0:	http://downloads.xiph.org/releases/opus/%{name}-%{version}.tar.gz
-# Source0-md5:	86eedbd3c5a0171d2437850435e6edff
+# Source0-md5:	c5a8cf7c0b066759542bc4ca46817ac6
 URL:		http://opus-codec.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -61,7 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libopus.so
-%{_libdir}/libopus.la
 %{_includedir}/opus
 %{_pkgconfigdir}/opus.pc
 %{_aclocaldir}/opus.m4
